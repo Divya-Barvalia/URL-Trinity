@@ -8,6 +8,8 @@ Paste a URL and get a **risk score** based on:
 - **Google Safe Browsing** lookup
 - **Typosquatting** detection (brand-like domains)
 
+Check it out here 👉 https://url-trinity.onrender.com
+
 ## API keys (optional)
 
 Without keys, the app still runs and checks **SSL** and **typosquatting**. For full checks, add:
