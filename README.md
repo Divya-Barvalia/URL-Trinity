@@ -8,18 +8,6 @@ Paste a URL and get a **risk score** based on:
 - **Google Safe Browsing** lookup
 - **Typosquatting** detection (brand-like domains)
 
-## Quick start
-
-```bash
-cd URLSafetyChecker
-npm install
-cp .env.example .env
-# Edit .env and add your API keys (optional for SSL + typosquatting)
-npm start
-```
-
-Open **http://localhost:3000**, paste a URL, and click **Scan URL**.
-
 ## API keys (optional)
 
 Without keys, the app still runs and checks **SSL** and **typosquatting**. For full checks, add:
