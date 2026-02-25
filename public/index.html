@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing URL Scanner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon" aria-hidden="true">🛡️</span>
+        <h1>URL Trinity</h1>
+      </div>
+      <p class="tagline">Paste a URL. We check domain age, SSL, VirusTotal, Safe Browsing & typosquatting.</p>
+    </header>
+
+    <main class="main">
+      <form class="scan-form" id="scanForm">
+        <div class="input-wrap">
+          <input
+            type="url"
+            id="urlInput"
+            placeholder="https://example.com or example.com"
+            autocomplete="url"
+            required
+          />
+          <button type="submit" id="submitBtn" class="btn-scan">
+            <span class="btn-text">Scan URL</span>
+            <span class="btn-loader" aria-hidden="true"></span>
+          </button>
+        </div>
+        <p class="hint">API keys optional: without them we still check SSL and typosquatting.</p>
+      </form>
+
+      <div class="result" id="result" hidden>
+        <div class="risk-banner" id="riskBanner">
+          <div class="risk-score-wrap">
+            <span class="risk-label">Risk score</span>
+            <span class="risk-value" id="riskValue">0</span>
+            <span class="risk-max">/ 100</span>
+          </div>
+          <p class="risk-verdict" id="riskVerdict"></p>
+        </div>
+        <div class="result-meta">
+          <span class="result-url" id="resultUrl"></span>
+          <span class="result-domain" id="resultDomain"></span>
+        </div>
+        <ul class="checks" id="checksList"></ul>
+      </div>
+
+      <div class="error" id="error" hidden>
+        <p class="error-message" id="errorMessage"></p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>VirusTotal · WhoisXML · Google Safe Browsing · SSL · Typosquatting</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
