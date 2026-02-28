@@ -1,6 +1,6 @@
 # Phishing URL Scanner
 
-Paste a URL and get a **risk score** based on:
+Paste a URL and get a **risk score** for visiting that site based on:
 
 - **Domain age** (WhoisXML API)
 - **SSL certificate** validity
