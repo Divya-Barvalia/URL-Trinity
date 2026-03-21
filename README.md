@@ -8,7 +8,7 @@ Paste a URL and get a **risk score** for visiting that site based on:
 - **Google Safe Browsing** lookup
 - **Typosquatting** detection (brand-like domains)
 
-Check it out here 👉 https://url-trinity.onrender.com
+Check it out here 👉 https://url-trinity.onrender.com<br>
 Demo Video by me here 👉 https://youtu.be/eFxavn1Ni9Y
 
 ## API keys (optional)
